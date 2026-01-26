@@ -1,6 +1,6 @@
 baseURL = 'https://judelanning.com/'
 languageCode = 'en-us'
-title = 'Jude Lanning'
+title = 'jude lanning'
 theme = 'judes-theme'
 
 [params]
