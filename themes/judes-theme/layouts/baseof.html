@@ -4,6 +4,14 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  <svg class="svg-filters">
+    <defs>
+      <filter id="wobbly">
+        <feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="3" />
+        <feDisplacementMap in="SourceGraphic" scale="5" />
+      </filter>
+    </defs>
+  </svg>
   <header>
     {{ partial "header.html" . }}
   </header>

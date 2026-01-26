@@ -1,21 +1,21 @@
 :root {
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  --color-text: #1a1a1a;
-  --color-text-muted: #666;
-  --color-link: #1a1a1a;
-  --color-border: #e0e0e0;
-  --color-bg: #fff;
+  --color-text: #3d2b1f;
+  --color-text-muted: #6b5344;
+  --color-link: #3d2b1f;
+  --color-border: #c9b99a;
+  --color-bg: #f5f0e1;
   --max-width: 38rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #e8e8e8;
-    --color-text-muted: #999;
-    --color-link: #e8e8e8;
-    --color-border: #333;
-    --color-bg: #111;
+    --color-text: #d4c8b0;
+    --color-text-muted: #9a8b73;
+    --color-link: #d4c8b0;
+    --color-border: #4a3f2f;
+    --color-bg: #2a2318;
   }
 }
 
@@ -27,18 +27,32 @@ html {
   font-size: 18px;
 }
 
+.svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
 body {
   font-family: var(--font-serif);
   font-size: 1rem;
   line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);
-  margin: 0;
-  padding: 2rem 1.5rem;
+  margin: 1.5rem auto;
+  padding: 2rem 2.5rem;
   max-width: var(--max-width);
-  margin-left: auto;
-  margin-right: auto;
   text-transform: lowercase;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--color-border);
+  pointer-events: none;
+  filter: url(#wobbly);
 }
 
 /* Header / Navigation */
@@ -91,6 +105,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.75rem;
   margin-top: 0;
+}
+
+h1::before {
+  content: "— ";
+}
+
+h1::after {
+  content: " —";
 }
 
 h2 {
