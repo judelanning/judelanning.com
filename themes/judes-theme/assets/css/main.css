@@ -1,5 +1,5 @@
 :root {
-  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-main: "EB Garamond", serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   --color-text: #3d2b1f;
   --color-text-muted: #6b5344;
@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
   font-size: 1rem;
   line-height: 1.7;
   color: var(--color-text);
