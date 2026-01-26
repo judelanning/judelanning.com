@@ -74,6 +74,14 @@ header .site-title {
   letter-spacing: 0.02em;
 }
 
+header .site-title::before {
+  content: "— ";
+}
+
+header .site-title::after {
+  content: " —";
+}
+
 header .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -105,14 +113,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.75rem;
   margin-top: 0;
-}
-
-h1::before {
-  content: "— ";
-}
-
-h1::after {
-  content: " —";
 }
 
 h2 {
