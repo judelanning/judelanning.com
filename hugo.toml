@@ -1,0 +1,23 @@
+baseURL = 'https://judelanning.com/'
+languageCode = 'en-us'
+title = 'Jude Lanning'
+theme = 'judes-theme'
+
+[params]
+  description = "Personal blog"
+  author = "Jude Lanning"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS"]
