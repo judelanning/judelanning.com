@@ -140,6 +140,7 @@ a:hover {
 /* Article / Post styling */
 article {
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 article header {
