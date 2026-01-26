@@ -1,8 +1,6 @@
 {{ define "main" }}
-  {{ .Content }}
   {{ $posts := where site.RegularPages "Section" "posts" }}
   {{ if $posts }}
-    <h2>Recent Posts</h2>
     <ul class="post-list">
       {{ range first 10 $posts }}
         <li>
