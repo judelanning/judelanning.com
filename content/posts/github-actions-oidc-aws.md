@@ -1,6 +1,6 @@
 ---
 title: "github actions with oidc to aws"
-date: 2026-01-27
+date: 2026-01-27T10:00:00-08:00
 draft: false
 summary: "replacing aws access keys with oidc tokens for automated deployments."
 ---
